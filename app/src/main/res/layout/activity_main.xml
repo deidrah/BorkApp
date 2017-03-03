@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.borkapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/zdjecie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bgbork" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logobork" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:fontFamily="sans-serif-light"
+        android:text="USE THE BORK"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:layout_below="@+id/soundButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/soundButton"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        android:src="@drawable/borkbutton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
